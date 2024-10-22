@@ -33,14 +33,19 @@ arr = [
 
 
 for bubble in range(len(arr)):
+    st= time.time()
     bubble_sort(arr[bubble])
-    print("Bubbles", arr[bubble], time.time())
+    et = time.time()
+    print("Bubbles", arr[bubble], et-st)
     
-    
-for i in range(len(arr)):
+for i in range(len(arr)):  
+    st= time.time()
     insertion_sort(arr[i])
-    print("Insertion", arr[i], time.time())
+    et = time.time()
+    print("Insertion", arr[i], et-st)
     
 for rabbit in range(len(arr)):
+    st= time.time()
     quick_sort(arr[rabbit])
-    print("Quicksort", arr[rabbit], time.time())
+    et = time.time()
+    print("Quicksort", arr[rabbit], et-st)
